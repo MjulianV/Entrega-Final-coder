@@ -34,6 +34,7 @@
       </div>
     </nav>
   </header>
+  
   <main>
     <section class="hero">
       <div class="container hero-content">
@@ -43,7 +44,9 @@
           <p>Hacemos impresión 3D para proyectos personales, repuestos y objetos que tenés en mente.</p>
           <a class="btn btn-accent" href="pages/contacto.html">Hablemos de tu idea</a>
         </div>
-        <div class="hero-art espacio-imagen" aria-label="Espacio reservado para una imagen"></div>
+        <div>
+          <img class="hero-art espacio-imagen" src="assets/banner-bambu-lab-1.webp" alt="Impresora 3D trabajando">
+        </div>
       </div>
     </section>
     <section class="home-gallery section-space" aria-labelledby="galeria-inicio">
@@ -66,7 +69,8 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="gallery-slide gallery-slide-one">
-                <div class="gallery-object espacio-imagen" aria-label="Espacio reservado para una imagen"></div>
+                <div class="gallery-image-wrap"><img class="gallery-image" src="assets/macetas3d.webp"
+                    alt="Macetas decorativas fabricadas con impresión 3D"></div>
                 <div class="gallery-caption"><span>01 / DECORACIÓN</span>
                   <h3>Pequeños detalles, grandes cambios</h3>
                   <p>Macetas y objetos para darle personalidad a tus espacios.</p>
@@ -75,7 +79,8 @@
             </div>
             <div class="carousel-item">
               <div class="gallery-slide gallery-slide-two">
-                <div class="gallery-object espacio-imagen" aria-label="Espacio reservado para una imagen"></div>
+                <div class="gallery-image-wrap"><img class="gallery-image" src="assets/soporte3d.webp"
+                    alt="Soporte impreso en 3D para organizar objetos"></div>
                 <div class="gallery-caption"><span>02 / PIEZAS ÚTILES</span>
                   <h3>Soluciones para todos los días</h3>
                   <p>Soportes, organizadores y piezas pensadas para su uso.</p>
@@ -84,10 +89,11 @@
             </div>
             <div class="carousel-item">
               <div class="gallery-slide gallery-slide-three">
-                <div class="gallery-object espacio-imagen" aria-label="Espacio reservado para una imagen"></div>
+                <div class="gallery-image-wrap"><img class="gallery-image" src="assets/impresora-3d-imprimiendo.webp"
+                    alt="Impresora 3D fabricando una pieza"></div>
                 <div class="gallery-caption"><span>03 / A MEDIDA</span>
                   <h3>Una idea propia</h3>
-                  <p>Podemos revisar tu propuesta y pensar cómo llevarla a la impresión.</p>
+                  <p>Si tenés algo en mente, podemos revisar tu propuesta y pensar cómo llevarla a la impresión.</p>
                 </div>
               </div>
             </div>
@@ -97,9 +103,8 @@
           <button class="carousel-control-next" type="button" data-bs-target="#carouselTrabajos" data-bs-slide="next"
             aria-label="Imagen siguiente"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
         </div>
-        
-        <div 
-        class="gallery-link"><a class="btn btn-accent" href="pages/trabajos.html">Ver trabajos</a></div>
+
+        <div class="gallery-link"><a class="btn btn-accent" href="pages/trabajos.html">Ver trabajos</a></div>
       </div>
     </section>
     <section class="callout">

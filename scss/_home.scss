@@ -37,9 +37,18 @@
 }
 
 .hero-art {
-    min-height: 350px;
-    background: #27302c;
-    border-radius: $radio;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.hero-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
 }
 
 .info-card {
@@ -100,4 +109,39 @@
 .callout-inner {
     @include flex-center(row, 2rem);
     justify-content: space-between;
+}
+
+
+.project-carousel {
+    overflow: hidden;
+    background-color: #f5f2ed;
+    border-radius: 20px;
+}
+
+.project-carousel .carousel-inner {
+    background-color: #f5f2ed;
+}
+
+.project-carousel .carousel-inner {
+    background-color: #f5f2ed;
+}
+
+.project-carousel .carousel-item {
+    background-color: transparent;
+    color: #252b28;
+}
+
+.gallery-image-wrap {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
 }

@@ -86,13 +86,13 @@
 @media (max-width: 767px) {
   .gallery-slide {
     grid-template-columns: 1fr;
-    gap: .5rem;
-    padding: 2.3rem 2.7rem 3rem;
+    gap: 1rem;
+    padding: 2.3rem 2.7rem 3.2rem;
     min-height: 470px;
   }
 
-  .gallery-object {
-    min-height: 175px;
+  .gallery-image-wrap {
+    height: 175px;
   }
 
   .gallery-caption {

@@ -66,7 +66,10 @@
 }
 
 .work-art {
-    min-height: 240px;
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
     background: #f1f0ec;
 }
 
@@ -97,7 +100,10 @@
 }
 
 .about-visual {
-    min-height: 360px;
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
     border-radius: $radio;
     background: #f1f0ec;
 }
@@ -176,15 +182,16 @@
 }
 
 
-/* galeria horizontal de la pagina de inicio */
+/* galeria horizontal de la paginaa de inicio */
 .project-carousel {
     border-radius: 18px;
     overflow: hidden;
-    background: #202725;
+    background: #f5f2ed;
 }
 
 .gallery-slide {
     min-height: 360px;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -209,37 +216,6 @@
     display: grid;
     place-items: center;
     position: relative;
-}
-
-.gallery-object-pot:before {
-    content: "";
-    width: 145px;
-    height: 150px;
-    display: block;
-    background: repeating-linear-gradient(0deg, #e26d42 0 7px, #d95e35 7px 11px);
-    clip-path: polygon(8% 0, 92% 0, 78% 100%, 22% 100%);
-    filter: drop-shadow(12px 15px 10px #20272522);
-}
-
-.gallery-object-stand:before {
-    content: "";
-    width: 180px;
-    height: 125px;
-    display: block;
-    border: 23px solid #687c70;
-    border-bottom-width: 17px;
-    border-radius: 12px;
-    transform: perspective(160px) rotateX(-5deg);
-}
-
-.gallery-object-figure:before {
-    content: "";
-    width: 100px;
-    height: 130px;
-    display: block;
-    background: #bd7958;
-    border-radius: 45% 45% 18% 18%;
-    box-shadow: 0 -44px 0 -12px #d69b7c;
 }
 
 .gallery-caption {

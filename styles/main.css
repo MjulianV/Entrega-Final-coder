@@ -661,11 +661,13 @@ a {
 
 .gallery-slide {
     min-height: 360px;
+    height: 100%;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 2rem;
-    padding: 3.5rem 6rem
+    padding: 3.5rem 6rem;
 }
 
 .gallery-slide-one {
@@ -746,7 +748,7 @@ a {
 
 .project-carousel .carousel-control-prev-icon,
 .project-carousel .carousel-control-next-icon {
-    background-color: #202725;
+    background-color: #d4ece6;
     border-radius: 50%;
     background-size: 55%;
     padding: 1.2rem
@@ -945,3 +947,85 @@ a {
 }
 
 /* FOOTER  */
+
+/* Aajustes de imagenes y carrusel */
+.hero-art {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-image-wrap {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.project-carousel,
+.project-carousel .carousel-inner {
+    background: #f5f2ed;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.project-carousel .carousel-item {
+    background: transparent;
+}
+
+.gallery-slide {
+    box-sizing: border-box;
+}
+
+.work-art {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background: #f1f0ec;
+}
+
+.about-visual {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+@media (max-width: 767px) {
+    .gallery-slide {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 2.3rem 2.7rem 3.2rem;
+        min-height: 470px;
+    }
+
+    .gallery-image-wrap {
+        height: 175px;
+    }
+
+    .project-carousel,
+    .project-carousel .carousel-inner,
+    .project-carousel .carousel-item {
+        background-color: #f5f2ed;
+    }
+}
+
+@media (max-width: 420px) {
+    .gallery-slide {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
